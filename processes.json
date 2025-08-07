@@ -1,0 +1,6 @@
+{
+  "name": "smart-vote",
+  "script": "main.ts",
+  "interpreter": "deno",
+  "interpreterArgs": "-A"
+}
