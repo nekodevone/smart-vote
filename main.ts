@@ -38,7 +38,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
 
   // Incorrect reaction
   if (!shouldBeKept) {
-    await trySafe(() => reaction.remove())
+    await trySafe(() => reaction.users.remove(user.id))
     return
   }
 })
